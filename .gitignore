@@ -1,0 +1,11 @@
+#
+#
+#
+.vs/
+x64/
+*.o
+*.elf
+*.bin
+*.list
+*.map
+*.vcxproj.*

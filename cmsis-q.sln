@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cmsis-q", "cmsis-q.vcxproj", "{25951FD6-945C-44AD-AD8E-6024A73B32BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25951FD6-945C-44AD-AD8E-6024A73B32BB}.Debug|x64.ActiveCfg = Debug|x64
+		{25951FD6-945C-44AD-AD8E-6024A73B32BB}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E13D7829-BEBC-42B4-84BB-84DDC3D4842C}
+	EndGlobalSection
+EndGlobal
