@@ -44,7 +44,7 @@ A_OBJECTS=$(A_SOURCES:.s=.o)
 include $(wildcard $(addsuffix .d,$(basename $(C_OBJECTS))))
 
 #
-all : $(TARGET).elf $(C_OBJECTS) $(A_OBJECTS) $(LD_SCRIPT) util.h
+all : $(TARGET).elf $(C_OBJECTS) $(A_OBJECTS) $(LD_SCRIPT)
 	
 #
 clean:
@@ -89,6 +89,6 @@ version:
 
 # all in one. spawn qemu in detached window, GDB in another
 # requires runex. omit
-#xr:
-#	runex -r -d -v -- $(QEMU) -gdb tcp::2345,ipv4 -serial mon:stdio $(QEMUARGS) -S -kernel $(TARGET).elf
-#	$(GDB) -ex "target remote localhost:2345" -ex "set output-radix 16" -ex "b Reset_Handler" -ex "c" $(TARGET).elf
+xr:
+	runex -r -d -v -- $(QEMU) -gdb tcp::2345,ipv4 -serial mon:stdio $(QEMUARGS) -S -kernel $(TARGET).elf
+	$(GDB) -ex "target remote localhost:2345" -ex "set output-radix 16" -ex "b Reset_Handler" -ex "c" $(TARGET).elf
